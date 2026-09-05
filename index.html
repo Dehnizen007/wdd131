@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Web Page</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>Welcome to My Web Page</h1>
-        </header>
-        <main>
-            <p>This is a sample web page created for demonstration purposes.</p>
-        </main>
-        <footer>
-            <p>&copy; 2024 My Web Page</p>
-        </footer>           
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Dynamic Web Fundamentals</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Dennison Ehidiamhen Iyere">
+  <meta name="author" content="Dennison Ehidiamhen Iyere">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
+  
+</head>
+<body>
+  <header>
+    <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+  </header>
+  <nav>
+    <a href="#">LinkedIn</a>
+    <a href="#">I-Learn</a>
+    <a href="#">Scripture</a>
+    <a href="#">Final Project</a>
+  </nav>
+  <main>
+      <h1>Dennison Ehidiamhen Iyere</h1>
+<div class="card-container">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="bio-content">
+                    <p>My name is Dennison. I was born in Benin City and live with my family in same city . I currently am a student with BYU Idaho with help from BYU pathway. I currently am pursuing a degree in Computer Science.</p>
+                    <img src="images/profile.jpg" alt="Profile photo of Dennison Ehidiamhen Iyere" class="profile-img">
+                </div>
+                
+                <h3 class="location-heading">Nigeria</h3>
+                <hr>
+                <div class="location-content">
+                    <figure>
+                        <img src="images/flag.jpg" alt="Official Flag of Your Location" class="flag-img">
+                        <figcaption>Official Flag of Your Location</figcaption>
+                    </figure>
+                    <p>Provide a short 2-3 sentence overview about your country or region's unique geography, history, or facts here.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                    <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+                    <li><a href="https://picsum.photos" target="_blank">Lorem Picsum Image Placeholder</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌸 Dennison Ehidiamhen Iyere 🌸 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+        <script src="scripts/getdates.js" defer></script>
+</body>
 </html>
