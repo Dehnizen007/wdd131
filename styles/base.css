@@ -23,7 +23,7 @@ body {
 /* Header Styling */
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -42,7 +42,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     padding: 0.75rem 1rem;
     display: block;
@@ -85,7 +85,7 @@ main h1 {
 
 .card h2 {
     background-color: var(--primary-color);
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 0.5rem;
     font-size: 1.2rem;
@@ -150,7 +150,7 @@ figcaption {
 /* Footer Styling */
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
