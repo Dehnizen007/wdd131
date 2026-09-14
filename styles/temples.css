@@ -43,12 +43,20 @@ body {
   cursor: pointer;
 }
 
-.navigation {
-  display: none;
+nav {
+  display: flex;
   flex-basis: 100%;
   flex-direction: column;
   gap: 0.25rem;
   padding-top: 0.75rem;
+}
+
+nav:not(.open) {
+  display: none;
+}
+
+.navigation {
+  display: flex;
 }
 
 .navigation.open {
