@@ -13,7 +13,8 @@
   }
 
   .navigation,
-  .navigation.open {
+  .navigation.open,
+  .navigation:not(.open) {
     display: flex;
     flex-basis: auto;
     flex-direction: row;
