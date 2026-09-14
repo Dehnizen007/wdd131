@@ -1,0 +1,121 @@
+:root {
+  --plum: #42105f;
+  --plum-dark: #2d0b42;
+  --ink: #202124;
+  --paper: #fbfafc;
+  --accent: #e9b44c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "DM Sans", sans-serif;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  color: white;
+  background: var(--plum);
+}
+
+.site-title {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.menu-button {
+  border: 0;
+  color: white;
+  background: transparent;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.navigation {
+  display: none;
+  flex-basis: 100%;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-top: 0.75rem;
+}
+
+.navigation.open {
+  display: flex;
+}
+
+.navigation a {
+  padding: 0.65rem 0;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:focus-visible {
+  color: var(--accent);
+}
+
+main {
+  width: min(100% - 2rem, 1100px);
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  color: var(--plum-dark);
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem 1.25rem;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.4rem 1rem rgb(45 11 66 / 15%);
+}
+
+figcaption {
+  padding-top: 0.6rem;
+  color: var(--plum);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+footer {
+  padding: 1.25rem;
+  color: white;
+  background: var(--plum-dark);
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+footer p {
+  margin: 0.25rem;
+}

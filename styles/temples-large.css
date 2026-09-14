@@ -1,0 +1,40 @@
+@media screen and (min-width: 700px) {
+  .site-header {
+    flex-wrap: nowrap;
+    padding: 1rem clamp(2rem, 5vw, 5rem);
+  }
+
+  .site-title {
+    font-size: 2rem;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .navigation,
+  .navigation.open {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    gap: clamp(1rem, 3vw, 3rem);
+    padding-top: 0;
+  }
+
+  .navigation a {
+    padding: 0.5rem 0;
+  }
+
+  main {
+    padding-top: 2.5rem;
+  }
+
+  h1 {
+    margin-bottom: 1.75rem;
+  }
+
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1.25rem;
+  }
+}
