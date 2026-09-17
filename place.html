@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A responsive country profile for Nigeria with facts and weather information.">
+	<title>Nigeria | Country Profile</title>
+	<link rel="stylesheet" href="styles/place.css">
+	<script src="scripts/place.js" defer></script>
+</head>
+<body>
+	<header class="site-header">
+		<h1>Nigeria</h1>
+	</header>
+	<main>
+		<div class="hero">
+			<picture>
+				<source media="(min-width: 700px)" srcset="images/nigeria-wide.webp">
+				<img src="images/nigeria-mobile.webp" alt="Zuma Rock, a famous landmark near Abuja, Nigeria" width="1200" height="800">
+			</picture>
+			<section class="info-panel data-panel" aria-labelledby="data-heading">
+				<h2 id="data-heading">Data</h2>
+				<dl>
+					<div><dt>Area:</dt><dd>923,768 sq km</dd></div>
+					<div><dt>Population:</dt><dd>223,804,632</dd></div>
+					<div><dt>Capital:</dt><dd>Abuja</dd></div>
+					<div><dt>Languages:</dt><dd>English, Hausa, Yoruba, Igbo</dd></div>
+					<div><dt>Currency:</dt><dd>Nigerian Naira</dd></div>
+					<div><dt>Time Zone:</dt><dd>UTC+1</dd></div>
+					<div><dt>Calling Code:</dt><dd>+234</dd></div>
+					<div><dt>Internet TLD:</dt><dd>.ng</dd></div>
+				</dl>
+			</section>
+			<section class="info-panel weather-panel" aria-labelledby="weather-heading">
+				<h2 id="weather-heading">Weather</h2>
+				<img class="weather-icon" src="images/partly-cloudy.svg" alt="Partly cloudy">
+				<dl>
+					<div><dt>Temperature:</dt><dd>27 °C</dd></div>
+					<div><dt>Conditions:</dt><dd>Partly Cloudy</dd></div>
+					<div><dt>Wind:</dt><dd>10 km/h</dd></div>
+					<div><dt>Wind Chill:</dt><dd id="wind-chill">N/A</dd></div>
+				</dl>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<p>&copy;<span id="currentyear"></span> 🌺 Dennison Ehidamhen Iyere 🌺 Nigeria</p>
+		<p id="lastModified"></p>
+	</footer>
+</body>
+</html>

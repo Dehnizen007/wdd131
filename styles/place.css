@@ -1,0 +1,42 @@
+:root {
+  --green: #008751;
+  --green-dark: #006b40;
+  --ink: #171717;
+  --paper: #fff;
+  --panel: rgb(255 255 255 / 88%);
+  --font: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--font); }
+.site-header { padding: 1.25rem 1rem; color: white; background: var(--green); text-align: center; }
+h1, h2, p { margin: 0; }
+h1 { font-size: clamp(2rem, 7vw, 3.25rem); }
+.hero { border-top: 1.5rem solid var(--green-dark); }
+.hero picture, .hero picture img { display: block; width: 100%; }
+.hero picture img { height: 60vw; max-height: 44rem; object-fit: cover; }
+.info-panel { padding: 1.5rem 1rem 2rem; background: var(--paper); text-align: center; }
+.info-panel + .info-panel { border-top: 1px solid #e6e6e6; }
+h2 { margin-bottom: 1.75rem; font-size: 2.1rem; }
+dl { margin: 0 auto; max-width: 27rem; }
+dl div { display: flex; justify-content: center; gap: .75rem; margin: .55rem 0; font-size: 1.05rem; }
+dt { font-weight: 700; }
+dd { margin: 0; }
+.weather-icon { display: block; width: 7rem; height: 7rem; margin: 0 auto 1.25rem; }
+footer { padding: 2.25rem 1rem; color: white; background: var(--green); font-size: 1.05rem; text-align: center; }
+footer p + p { margin-top: .35rem; }
+
+@media screen and (min-width: 700px) {
+  .site-header { padding: 1.5rem 1rem; }
+  .hero { position: relative; border-top-width: 1rem; }
+  .hero picture img { height: min(48vw, 34rem); }
+  .info-panel { position: absolute; width: min(26rem, 27vw); padding: 0 1rem 1.25rem; background: var(--panel); }
+  .data-panel { top: 2rem; left: 1.5%; }
+  .weather-panel { right: 1.5%; bottom: 2rem; }
+  .info-panel h2 { margin: 0 -1rem 1.25rem; padding: .7rem 1rem; color: white; background: var(--green); font-size: 1.8rem; text-align: left; }
+  .weather-panel h2::after { content: " \26C5"; float: right; }
+  .info-panel dl { max-width: none; }
+  .info-panel dl div { gap: .5rem; margin: .4rem 0; font-size: .92rem; }
+  .weather-icon { display: none; }
+  footer { padding: 1.75rem 1rem; font-size: .95rem; }
+}

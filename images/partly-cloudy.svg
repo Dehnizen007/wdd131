@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Partly cloudy</title>
+  <g fill="none" stroke="#211b1b" stroke-linecap="round" stroke-width="6">
+    <path d="M64 10v12M25 26l8 9M12 65h12M25 104l9-9M103 104l-9-9M116 65h-12M103 26l-9 9"/>
+  </g>
+  <circle cx="63" cy="64" r="25" fill="#ffc335" stroke="#211b1b" stroke-width="5"/>
+  <path d="M42 92h48c13 0 23-9 23-21s-9-21-20-22c-4-13-16-21-30-18-12 2-20 11-22 22-13 1-22 9-22 20 0 11 10 19 23 19z" fill="#c5a87c" stroke="#211b1b" stroke-width="5"/>
+  <g fill="#211b1b" stroke="none"><circle cx="58" cy="102" r="3"/><circle cx="70" cy="102" r="3"/><circle cx="82" cy="102" r="3"/><circle cx="64" cy="111" r="3"/><circle cx="76" cy="111" r="3"/></g>
+</svg>
