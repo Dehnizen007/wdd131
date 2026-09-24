@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore a responsive Temple Album with temple data, filtering, and native lazy-loaded images for WDD 131.">
+  <meta name="author" content="Dennison Ehidiamhen Iyere">
+  <title>Temple Album</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="filtered-temples.html">Temple Album</a>
+    <button id="menu" class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    <nav id="primary-nav" class="navigation" aria-label="Primary navigation">
+      <a href="filtered-temples.html" data-filter="home">Home</a>
+      <a href="#old" data-filter="old">Old</a>
+      <a href="#new" data-filter="new">New</a>
+      <a href="#large" data-filter="large">Large</a>
+      <a href="#small" data-filter="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="page-title">Home</h1>
+    <section id="temple-grid" class="temple-grid" aria-label="Temple collection"></section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> &#127800; Dennison Ehidiamhen Iyere &#127800; Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
