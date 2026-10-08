@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse Nigerian-inspired recipes, filter by ingredient or cooking goal, and save favorites on this device.">
+  <meta name="author" content="Dennison Ehidiamhen Iyere">
+  <meta name="theme-color" content="#18372f">
+  <title>Recipes | Healthy Nigerian Cuisine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Healthy Nigerian Cuisine home"><span class="brand-mark" aria-hidden="true">H<span>·</span>N</span><span class="brand-name">Healthy Nigerian<br><strong>Cuisine</strong></span></a>
+    <nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a aria-current="page" href="recipes.html">Recipes</a><a href="culture.html">Food &amp; culture</a></nav>
+  </header>
+  <main id="main">
+    <section class="page-intro wrap">
+      <p class="eyebrow">Recipes for your table</p>
+      <h1>Find something<br><em>good to cook.</em></h1>
+      <p>Explore familiar favorites and everyday ideas. Use the filters to find dishes that fit your ingredients or the way you want to eat.</p>
+    </section>
+    <section class="recipe-browser wrap" aria-labelledby="browse-heading">
+      <div class="browser-heading"><div><p class="eyebrow">Your kitchen, your way</p><h2 id="browse-heading">Browse the recipes</h2></div><p id="recipe-status" class="status-message" role="status" aria-live="polite"></p></div>
+      <form class="filters" id="recipe-filters">
+        <div><label for="ingredient-filter">Main ingredient</label><select id="ingredient-filter" name="ingredient"><option value="all">Any ingredient</option><option value="rice">Rice</option><option value="leafy greens">Leafy greens</option><option value="beans">Beans</option><option value="beef">Beef</option><option value="fish">Fish</option><option value="yam">Yam</option></select></div>
+        <div><label for="goal-filter">Cooking goal</label><select id="goal-filter" name="goal"><option value="all">Any goal</option><option value="vegetarian">Vegetarian option</option><option value="more-veg">More vegetables</option><option value="plant-protein">Plant-based protein</option><option value="lower-sodium">Lower-sodium idea</option></select></div>
+        <label class="favorite-filter"><input id="favorites-only" type="checkbox"> Show saved only</label>
+        <button class="button clear-button" id="clear-filters" type="button">Clear filters</button>
+      </form>
+      <div class="recipe-grid" id="recipe-grid" aria-live="polite"></div>
+    </section>
+    <section class="kitchen-note">
+      <div class="wrap kitchen-note-inner"><span class="note-mark" aria-hidden="true">✳</span><div><h2>A note on balance</h2><p>Recipes here are starting points, not medical or nutrition advice. Adjust salt, oil, heat, and portions to suit your needs; for personal dietary guidance, consult a qualified health professional.</p></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-main"><div><a class="footer-brand" href="index.html">Healthy Nigerian Cuisine</a><p>Traditional flavor, thoughtful everyday cooking.</p></div><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="culture.html">Food &amp; culture</a><a href="references.html">References</a></nav></div><div class="wrap footer-bottom"><span>With appreciation to Empress De Luxes Snack and Catering Service.</span><span>© <span id="current-year">2026</span> Healthy Nigerian Cuisine</span></div></footer>
+  <template id="recipe-card-template">
+    <article class="recipe-card">
+      <a class="recipe-image" href="#"><img src="" alt="" width="560" height="440" loading="lazy"></a>
+      <div class="recipe-card-content">
+        <p class="card-kicker"></p><h3><a class="recipe-title" href="#"></a></h3><p class="recipe-summary"></p>
+        <details><summary>Ingredients &amp; method</summary><div class="recipe-details"></div></details>
+        <button class="save-button" type="button" aria-pressed="false"></button>
+      </div>
+    </article>
+  </template>
+</body>
+</html>
