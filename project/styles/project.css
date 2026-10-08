@@ -124,7 +124,9 @@ select, input, textarea { min-height: 2.8rem; padding: .55rem .7rem; border: 1px
 .kitchen-note h2 { margin-bottom: .35rem; font-size: 1.6rem; }
 .kitchen-note p { max-width: 52rem; margin-bottom: 0; color: var(--muted); }
 .note-mark { color: var(--red); font-size: 2rem; }
-.culture-intro { padding-bottom: 3.2rem; }
+.culture-intro { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(2rem, 6vw, 5rem); padding-bottom: 3.2rem; }
+.culture-intro-copy > p:last-child { max-width: 43rem; margin-bottom: 0; color: var(--muted); font-size: 1.18rem; }
+.culture-intro-image { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
 .culture-feature { padding-block: 3rem; background: var(--paper); }
 .culture-feature-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(2rem, 6vw, 5rem); }
 .culture-art { position: relative; display: grid; min-height: 23rem; place-items: center; overflow: hidden; background: #e6d092; }
@@ -174,7 +176,7 @@ select, input, textarea { min-height: 2.8rem; padding: .55rem .7rem; border: 1px
   .intro-grid .text-link { grid-column: auto; }
   .section { padding-block: 3.5rem; }
   .section-heading, .browser-heading { align-items: start; flex-direction: column; gap: .7rem; }
-  .feature-grid, .recipe-grid, .culture-feature-grid, .suggestion-grid { grid-template-columns: 1fr; }
+  .feature-grid, .recipe-grid, .culture-intro, .culture-feature-grid, .suggestion-grid { grid-template-columns: 1fr; }
   .feature-copy > p:not(.card-kicker), .recipe-summary { min-height: 0; }
   .callout-inner { align-items: start; flex-direction: column; justify-content: center; min-height: 0; padding-block: 3rem; }
   .callout-decoration { right: -1rem; bottom: -5rem; font-size: 12rem; }
